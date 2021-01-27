@@ -8,7 +8,7 @@ const requestHandler = (req, res) => {
     res.write('<html>');
     res.write('<head><title>My Node App</title></head>');
     res.write(
-      '<body><form action="/message" method="POST"><input type="text" name="message"><button type="submit">Send</button></form></body>'
+      '<body><form action="/message" method="POST"><input type="text" name="message"><button type="submit">send</button></form></body>'
     );
     res.write('</html>');
     return res.end();

@@ -30,7 +30,6 @@ const requestHandler = (req, res) => {
     return req.on('end', () => {
       const parsedBody = Buffer.concat(body).toString();
       const username = parsedBody.split('=')[1];
-      // fs.writeFile('username.txt', username, err => {
         res.statusCode = 302;
         console.log(username);
         res.setHeader('Location', '/users');
@@ -39,7 +38,6 @@ const requestHandler = (req, res) => {
         // res.write('<body><h3>Thanks for creating an account!</h3></body>');
         // res.write('</html>');
         return res.end();
-      // });
     });
   }
 
