@@ -16,6 +16,8 @@ const app = express();
 
 // parsing request body and calling next() at the end:
 app.use(bodyParser.urlencoded({ extended: false }));
+// serving files statically:
+app.use(express.static(path.join(__dirname, 'public')));
 
 // order matters:
 app.use('/admin', adminRoutes);

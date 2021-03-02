@@ -1,0 +1,25 @@
+.form {
+  width: 80%;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgb(251, 216, 224);
+  padding: 24px;
+  border: 2px solid rgb(172, 72, 97);
+}
+.form__input,
+.form__input.main-header__item:active,
+.form__input.main-header__item:focus {
+  padding: 6px;
+  border: 2px solid rgb(172, 72, 97);
+  outline: none;
+}
+.form__button {
+  padding: 6px;
+  margin-top: 24px;
+  border: 2px solid rgb(172, 72, 97);
+  color: rgb(172, 72, 97);
+  font-weight: 700;
+  background-color: white;
+  cursor: pointer;
+}
