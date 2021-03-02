@@ -2,11 +2,13 @@ const path = require('path');
 const express = require('express');
 
 const rootDir = require('../helper/path');
+const adminData = require('./admin');
 // end of imports
 
 const router = express.Router();
 
 router.get('/', (req, res, next) => {
+  console.log(adminData.products);
   res.sendFile(path.join(rootDir, 'views', 'shop.html'));
 });
 
