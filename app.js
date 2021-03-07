@@ -14,6 +14,10 @@ const app = express();
 //   next();
 // });
 
+app.set('view engine', 'pug');
+// views is the default folder to look for templates in express but if it is different it must be specified here
+app.set('views', 'views');
+
 // parsing request body and calling next() at the end:
 app.use(bodyParser.urlencoded({ extended: false }));
 // serving files statically:
