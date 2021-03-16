@@ -12,7 +12,7 @@ router.get('/', (req, res, next) => {
   // sending html file:
   // res.sendFile(path.join(rootDir, 'views', 'shop.html'));
   // compiling and sending pug file:
-  res.render('shop', { prods: products, docTitle: 'Shop' });
+  res.render('shop', { prods: products, docTitle: 'Shop', path: '/' });
 });
 
 module.exports = router;
