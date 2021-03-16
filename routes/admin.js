@@ -9,7 +9,8 @@ const router = express.Router();
 const products = [];
 
 router.get('/add-product', (req, res, next) => {
-  res.sendFile(path.join(rootDir, 'views', 'add-product.html'));
+  // res.sendFile(path.join(rootDir, 'views', 'add-product.html'));
+  res.render('add-product', { docTitle: 'Add Product' });
 });
 
 // app.post() will only execute for incoming POST request, we also have app.get(), so with app.post() it will only be accessible througn post requests
